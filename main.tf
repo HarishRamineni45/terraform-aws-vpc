@@ -22,7 +22,7 @@ resource "aws_subnet" "public" {
   map_public_ip_on_launch = true
 
 
-  tags = merge ( 
+  tags = merge( 
             local.common_tags,
                 {
                   Name = "${var.project}-${var.environment}-public-${local.az_names[count.index]}"
