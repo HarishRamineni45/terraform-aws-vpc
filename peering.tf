@@ -1,11 +1,10 @@
 resource "aws_vpc_peering_connection" "default" {
   count         = var.is_peering_required ? 1 : 0
-  peer_vpc_id   = data.aws_vpc.default.id #Accepter VPC
-  vpc_id        = aws_vpc.main.id  #Requester VPC
+  peer_vpc_id   = data.aws_vpc.default.id
+  vpc_id        = aws_vpc.main.id  
 
   auto_accept   = true
-  enable_dns_support = true
-  enable_dns_hostnames = true
+ 
 
   accepter {
     allow_remote_vpc_dns_resolution = true
