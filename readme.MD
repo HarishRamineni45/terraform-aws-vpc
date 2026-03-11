@@ -123,5 +123,5 @@ roboshop-dev-database-us-east-1a
 
 
 
----![alt text](image.png)
+---![alt text](vpc-module.png)
 
