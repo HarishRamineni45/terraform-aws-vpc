@@ -12,5 +12,4 @@ data "aws_route_table" "default" {
     name   = "association.main"
     values = ["true"]
   }
-  
 }
