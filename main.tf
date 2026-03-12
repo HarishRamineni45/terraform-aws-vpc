@@ -2,8 +2,7 @@ resource "aws_vpc" "main" {
   cidr_block       = var.vpc_cidr
   instance_tenancy = "default"
   enable_dns_hostnames = true
-  instance_type = var.instance_type
-  
+
   tags = local.vpc_final_tags
 }
 
